@@ -1,0 +1,70 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">-->
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="Live%20View_files/base.css" type="text/css">
+	<link rel="stylesheet" href="Live%20View_files/main.css" type="text/css">
+	<script type="text/javascript" src="Live%20View_files/jquery-1.js"></script>
+	<script type="text/javascript" src="Live%20View_files/jquery.js"></script>
+	<script type="text/javascript" src="Live%20View_files/common.js"></script>
+	<script type="text/javascript" src="Live%20View_files/WdatePicker.js"></script><link href="Live%20View_files/WdatePicker.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="Live%20View_files/Translator.js"></script>
+	<script type="text/javascript" src="Live%20View_files/main.js"></script>
+<title>Live View</title></head>
+<body onload="latestPage()">
+    <div id="header">
+	    <div class="headleft">
+		    <span class="devicetype"><label id="main_type" class="fontsize32">08CSH-P</label></span>
+		</div>
+		<div id="headRight" class="headright"></div>
+		<div class="logoedition"></div>
+	    <div class="language">
+		    <span id="spanHelp"><label name="laHelp" class="cursorpointer">Help</label>&nbsp;&nbsp;</span>
+	        <span><select id="LanguageSelect" name="LanguageSelect" class="width100" onchange="changeFrameLanguage(this.value)"><option value="zh">中文</option><option value="en" selected="selected">English</option></select></span>
+        </div>
+	    <div id="softwareEdition">
+            <div class="edtionline"><label>Web:</label>&nbsp;&nbsp;&nbsp;&nbsp;3.0.2.121008</div>	
+            <div class="edtionline"><label>Plugin:</label>&nbsp;3.0.3.18</div>	
+        </div>
+    </div> 
+    <div id="nav">
+		<div id="iMenu1" class="menufirst menuBackground">
+			<label name="laPreview" onmouseover="this.className='linklabelSel'" onmouseout="this.className='linklabel'" class="linklabel" onclick="changeFrame('preview.asp',1)">Live&nbsp;View</label>
+		</div>
+		<div id="iMenu2" class="menuother">
+			<label name="laPlayback" onmouseover="this.className='linklabelSel'" onmouseout="this.className='linklabel'" class="linklabel" onclick="changeFrame('playback.asp',2)">Playback</label>
+		</div>
+		<div id="iMenu3" class="menuother">
+			<label name="laLog" onmouseover="this.className='linklabelSel'" onmouseout="this.className='linklabel'" class="linklabel" onclick="changeFrame('log.asp',3)">Log</label>
+		</div>
+		<div id="iMenu4" class="menuother">
+			<label name="laConfig" onmouseover="this.className='linklabelSel'" onmouseout="this.className='linklabel'" class="linklabel" onclick="changeFrame('paramconfig.asp',4)">Configuration</label>
+		</div>
+		<div class="menulast">
+			<label id="curruser">admin1</label>
+			<label>&nbsp;&nbsp;</label>
+			<label name="laExit" class="cursorpointer" onclick="GoAway()">Logout</label>
+		</div>
+    </div>
+    <div id="mainFrame"><iframe scrolling="no" id="ContentFrame" name="ContentFrame" onload="iframeAutoFit()" src="Live%20View_files/preview.html" style="width:1338px;height:518px;" frameborder="0"></iframe></div>
+    <div id="footer">
+      <!--<label name="laCopyRight">©Hikvision Digital Technology Co., Ltd. All Rights Reserved.
+	  </label>-->
+    <div id="WndArrangePart" style="display:none; height:31px; position:absolute; z-index:10; left:215px; top:626px;">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tbody><tr height="31">
+      <td width="24" valign="top" align="center"><img src="Live%20View_files/Wnd1.txt" id="wnd1" title="1*1" style="cursor: pointer;">
+      </td>
+      <td width="26" valign="top" align="center"><img src="Live%20View_files/Wnd4.txt" id="wnd4" title="2*2" style="cursor: pointer;">
+      </td>
+      <td width="23" valign="top" align="center"><img src="Live%20View_files/PushWnd9.txt" id="wnd9" title="3*3" style="cursor: pointer;">
+      </td>
+      <td width="25" valign="top" align="center"><img src="Live%20View_files/Wnd16.txt" id="wnd16" title="4*4" style="cursor:pointer; display:none"></td>
+    </tr>
+  </tbody></table>
+</div><div id="volumeDiv" style="display:none; position:absolute; height:23px; width:73px; z-index:10; left:1112; top:626;" align="left"><div id="volumeDiv_wrapper" style="position: relative;"><div id="volumeDiv_slider" class="VolumeSlider" style="position: absolute;"></div><div title="" id="volumeDiv_bar" class="VolumeBar" style="position: absolute;"></div></div></div></div>
+    <div id="CurTips"></div>
+    <iframe id="TipsIframe"></iframe>
+
+
+<div style="position: absolute; top: -1970px; left: -1970px;"><iframe style="width: 200px; height: 187px;" src="Live%20View_files/My97DatePicker.html" border="0" scrolling="no" frameborder="0"></iframe></div></body></html>

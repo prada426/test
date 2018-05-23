@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Configure ESPN Cricinfo Chrome Extension</title>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+	<link href="css/options.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1>
+		<img src="icon64.png" alt="ESPN Cricinfo"/>
+		ESPN Cricinfo Chrome Extension
+	</h1>
+	<h2>Options</h2>
+	<form id="options">
+		<label>When a wicket falls:</label><sup style="display:none;color:#0044D9" id="newLabel">new!</sup><br/>
+		<table border="0" cellspacing="0" cellpadding="5">
+			<tr>
+				<td><input type="radio" name="alert" id="icon" value="icon"></td><td><label for="icon">Animate extension icon</label></td>
+				<td><input type="radio" name="alert" id="toast" value="toast"></td><td><label for="toast">Show desktop notification</label></td>
+			</tr>
+		</table>
+		<br/>
+		<input type="checkbox" name="filter" id="filter"><label for="filter">Filter news stories by country</label>
+		<table border="0" cellspacing="0" cellpadding="5" class='teams'>
+			<tr>
+				<th colspan="6">Primary Country</th>
+			</tr>
+			<tr>
+				<td><input type="radio" name="team1" value="2" id="Aus" disabled="1"></td>
+				<td><label for="Aus">Australia</label></td>
+				<td><input type="radio" name="team1" value="25" id="Ban" disabled="1"></td>
+				<td><label for="Ban">Bangladesh</label></td>
+				<td><input type="radio" name="team1" value="1" id="Eng" disabled="1"></td>
+				<td><label for="Eng">England</label></td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="team1" value="6" id="Ind" disabled="1"></td>
+				<td><label for="Ind">India</label></td>
+				<td><input type="radio" name="team1" value="5" id="Nzl" disabled="1"></td>
+				<td><label for="Nzl">New Zealand</label></td>
+				<td><input type="radio" name="team1" value="7" id="Pak" disabled="1"></td>
+				<td><label for="Pak">Pakistan</label></td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="team1" value="3" id="Saf" disabled="1"></td>
+				<td><label for="Saf">South Africa</label></td>
+				<td><input type="radio" name="team1" value="8" id="Slk" disabled="1"></td>
+				<td><label for="Slk">Sri Lanka</label></td>
+				<td><input type="radio" name="team1" value="4" id="Wid" disabled="1"></td>
+				<td><label for="Wid">West Indies</label></td>
+			</tr>
+		</table>
+		<table border="0" cellspacing="0" cellpadding="5" class='teams'>
+			<tr>
+				<th colspan="5">Secondary Country</th><th style="text-align:right"><a id="clearcheckboxes" class="disabled" href="#">clear</a></th>
+			</tr>
+			<tr>
+				<td><input type="radio" name="team2" value="2" id="Aus2" disabled="1"></td>
+				<td><label for="Aus2">Australia</label></td>
+				<td><input type="radio" name="team2" value="25" id="Ban2" disabled="1"></td>
+				<td><label for="Ban2">Bangladesh</label></td>
+				<td><input type="radio" name="team2" value="1" id="Eng2" disabled="1"></td>
+				<td><label for="Eng2">England</label></td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="team2" value="6" id="Ind2" disabled="1"></td>
+				<td><label for="Ind2">India</label></td>
+				<td><input type="radio" name="team2" value="5" id="Nzl2" disabled="1"></td>
+				<td><label for="Nzl2">New Zealand</label></td>
+				<td><input type="radio" name="team2" value="7" id="Pak2" disabled="1"></td>
+				<td><label for="Pak2">Pakistan</label></td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="team2" value="3" id="Saf2" disabled="1"></td>
+				<td><label for="Saf2">South Africa</label></td>
+				<td><input type="radio" name="team2" value="8" id="Slk2" disabled="1"></td>
+				<td><label for="Slk2">Sri Lanka</label></td>
+				<td><input type="radio" name="team2" value="4" id="Wid2" disabled="1"></td>
+				<td><label for="Wid2">West Indies</label></td>
+			</tr>
+			<tr>
+				<td colspan="6" style='text-align:right'>
+					<input id="closebtn" type="button" value="Close"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

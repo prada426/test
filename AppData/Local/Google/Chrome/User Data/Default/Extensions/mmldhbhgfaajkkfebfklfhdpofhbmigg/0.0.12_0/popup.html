@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PAYBACK</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        body{margin: 0;}
+        .pb-popup-wrapper{width: 450px;font-family: 'Open Sans', sans-serif;}
+        .pb-popup-header {width: 100%;display: inline-block;padding: 8px;background-color: #0065b5; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12);}
+        .PAYBACK-Assist {
+    width: 185px;
+    height: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.08;
+    color: #ffffff;
+    float: left;
+    margin: 2px 5px;
+}
+.pb-search-box-wrap{
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0 5px;
+}
+        .PAYBACK-Assist span {font-weight: 500;font-style: italic;}
+        .popup-logo .scandidlogo{max-width: 150px;}
+        .popup-header .popup-logo a{display: inline-block;}
+        .pb-search-term {
+    margin: 0;
+    border-radius: 2px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0));
+    border-image-slice: 1;
+    width: 94%;
+    font-size: 15px;
+    padding: 10px 5px;
+}
+    .search-term:focus{outline-color: white;}
+    .pb-btn-submit {
+    padding: 11px 20px;
+    margin: 1px 7px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    color: #fff;
+    right: 0px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    background-image: url(https://t3.payback.in/images/extension/search-1x.png);
+}
+        .load-wrap{text-align: center;height: 200px;display: table-cell;vertical-align: middle;width: 500px;}
+        .footer-wrap{position: fixed;height: 50px;width: 100%;background-color: #222;bottom: 0;text-align: right;}
+        .footer{display: inline-block;text-align: right;margin-top: 5px;}
+        .playstore-img{background: url(http://scandid.in/images/extension/playstore.png) no-repeat scroll center center #222;background-size: 85%; border-radius: 0.2em; cursor: pointer; display: inline-block; float: left; height: 40px;  position: relative; text-decoration: none; transition: background-color 0.2s ease-in-out 0s; width: 135px;}
+        .itunestore-img{background: url('http://scandid.in/images/extension/applestore.png') no-repeat scroll center center rgba(0, 0, 0, 0);background-size: 85%;display: inline-block;height: 40px;width: 135px;}
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+  </head>
+  <body>
+    <!--<script src="angular.min.js"></script>-->
+    <script type="text/javascript" src="popup.js"></script>     
+    <!--<script type="text/javascript" src="app.js"></script>
+    <div id='message'>Injecting Script....</div>-->
+    <div class="pb-popup-wrapper" id="popupwrapper">
+        <div class="pb-popup-header">
+            <div class="pb-popup-logo">
+                <a style="float: left;" target="_blank" href="http://shoponline.payback.in?utm_source=chrome_ext&extid=<?php echo $extId; ?>" target="_blank">
+                    <img src="https://t3.payback.in/images/extension/pb-logo-1x.png" class="pb-logo-img" />
+                </a>
+                <div class="PAYBACK-Assist disp">PAYBACK <span>Deals Assistant</span></div>
+            </div>
+            <div class="pb-search-box-wrap">
+                <form action="http://shoponline.payback.in/search" method="get" class="search-form" id="search-form">
+                    <input type="text" id="searchbox" name="q" value="" placeholder="Search product & get best price" class="pb-search-term" autofocus="" required="">
+                    <input type="hidden" name="utm_source" value="chrome_extension"/>
+                    <input type="submit" class="pb-btn-submit" id="search-submit" value="" ref='ext-search' />
+                </form>
+            </div>
+        </div>
+        <div class='load-wrap'><img src='http://cdn.scandid.in/images/home/ring.gif' /></div>
+    </div>
+    <!--
+    <div class="footer-wrap">
+        <div class="footer">
+                <span style="color: #fff;float: left;font-size: 14px;padding: 10px 0;">Get SCANDID App From:</span>
+                <a id="playstore" target="_blank" href=" https://play.google.com/store/apps/details?id=in.shoppingwish.scandid&referrer=utm_source%3Dchrome_ext%26utm_term%3DDYNAMIC">
+                    <span class="playstore-img"></span>
+                </a>
+                <a id="applestore" href="https://itunes.apple.com/in/app/price-comparison-shopping/id773536950?mt=8" target="_blank" class="displayinlineblock marL15">
+                    <span class="itunestore-img"></span>
+                </a>
+        </div>
+    </div>-->
+  </body>
+</html>
